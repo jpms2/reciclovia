@@ -1,8 +1,13 @@
 package com.iluminati.reciclovia;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
 
 import com.github.jonaslins.fiware.FiwareOrionClient;
 import com.github.jonaslins.fiware.request.FiwareCallback;
@@ -39,6 +44,18 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MapsActivity.this ,PreRouteActivity.class);
+                startActivity(intent);
+             }
+        });
+
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -55,7 +72,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(hellcife, 15));
 
         carregarCiclovias();
-//        carregarPontosTuristicos();
+        carregarPontosTuristicos();
         carregarPontosBikePE();
     }
 
@@ -133,7 +150,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                         for (ContextResponse contextResponse: contextResponses) {
                             Attribute attribute = contextResponse.getContextElement().getAttributes().get(0);
                             String[] values = attribute.getValue().split(",");
-                            mMap.addMarker(new MarkerOptions().position(new LatLng(Double.parseDouble(values[1]), Double.parseDouble(values[0]))));
+                            mMap.addMarker(new MarkerOptions().position(new LatLng(Double.parseDouble(values[1]), Double.parseDouble(values[0]))).icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_account_balance_black_36dp)));
                         }
                     }
 

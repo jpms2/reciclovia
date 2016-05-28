@@ -1,4 +1,26 @@
 <resources>
     <string name="app_name">Reciclovia</string>
     <string name="title_activity_maps">Map</string>
+    <string name="title_activity_pre_route">Circuito da Influência Francesa</string>
+    <string name="large_text">
+        Este roteiro propõe uma viagem no tempo até o século XIX e pelas localidades que receberam essa forte influência que deixou traços neoclássicos na construção de importantes monumentos históricos.\n
+\n
+<b>Sugestão de visitas</b>:\n
+\n
+<b>Praça do Marco Zero</b> - As ruas se abrem a partir de um ponto central, a Avenida Rio Branco e a Rua Marquês de Olinda originam-se no Marco Zero, se assemelhando ao traçado da capital francesa. De costas para o mar, as ruas se abrem em linha reta, como a palma de uma mão, com edificações que obedeceram à influências francesas de urbanismo no início do século XX.\n\n
+<b>Mercado São José</b> - O mais antigo edifício pré-fabricado em ferro no país foi projetado por Jean Louis Lieuthier, em 1871, e inaugurado em sete de setembro de 1875, inspirado no Mercado de Grenelle, de Paris.\n\n
+<b>Pontes Maurício de Nassau e Santa Isabel</b> - A Ponte Maurício de Nassau liga o bairro de Santo Antônio ao bairro do Recife Antigo. Primeira ponte de madeira construída sobre o rio Capibaribe, e a primeira de grande porte no Brasil. Erguida no período holandês, apresenta hoje estátuas em ferros vindas da mesma fundição francesa que fez a Estátua da Liberdade.\n\n
+<b>Teatro de Santa Isabel e Praça da República</b> - A primeira e mais evidente obra do engenheiro francês Louis LégerVauthier, inaugurado em abril de 1869. O monumento divide o cenário com a Praça da República, lugar de descanso lúdico das filhas dos Imperadores do Brasil, à época da visita da família Imperial à Pernambuco; Além do teatro neoclássico, a praça apresenta grande conjunto de estátuas em ferro de deusas greco-romanas.\n\n
+<b>Casario neoclássico da Rua da Aurora, Assembleia Legislativa e Ginásio Pernambucano</b> - Ao longo da Rua que por ser virada para o leste, o nascente, recebeu o nome de Aurora comprova-se a influência francesa no casario.\n
+\n
+<b>Tempo estimado:</b>\n
+2h30\n\n
+<b>Melhor horário:</b>\n
+Manhã/tarde\n\n
+<b>Espaço público:</b>\n
+Sim\n\n
+<b>Valor:</b>\n
+Grátis\n</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
 </resources>
